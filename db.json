@@ -1,14 +1,305 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+	"development": [
+		{
+			"id": 1,
+			"name": "Squirrel Wood",
+			"price": 260000,
+			"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/borden.jpg",
+			"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+			"locationSlug": "houseTypes"
+		},
+		{
+			"id": 2,
+			"name": "Marlborough Park",
+			"price": 420000,
+			"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/marlborough-park.jpg",
+			"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+			"locationSlug": "houseTypes"
+		},
+		{
+			"id": 3,
+			"name": "Borden",
+			"price": 420000,
+			"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/borden.jpg",
+			"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+			"locationSlug": "houseTypes"
+		}
+	],
+	"houseTypes": [
+		{
+			"id": 1,
+			"name": "2 Storey, 1-2 Bed",
+			"price": 260000,
+			"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+			"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+			"houseTypeSlug": "floorTypes1"
+		},
+		{
+			"id": 2,
+			"name": "3 Storey, 3-4 Bed",
+			"price": 320000,
+			"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+			"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+			"houseTypeSlug": "houseTypeF"
+		},
+		{
+			"id": 3,
+			"name": "3 storey, 4-5 Bed",
+			"price": 420000,
+			"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+			"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+			"houseTypeSlug": "floorTypes3"
+		}
+	],
+	"floorTypes1": [
+		{
+			"id": 1,
+			"name": "ground-floor",
+			"floorLayouts": [
+				{
+					"id": 1,
+					"name": "Layout A",
+					"price": 260000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/F-00-A-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 2,
+					"name": "Layout B",
+					"price": 320000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/F-00-A-1-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 3,
+					"name": "Layout C",
+					"price": 420000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/F-00-B-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "first-floor",
+			"floorLayouts": [
+				{
+					"id": 4,
+					"name": "Layout A",
+					"price": 260000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/F-00-A-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 5,
+					"name": "Layout B",
+					"price": 320000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/F-00-A-1-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 6,
+					"name": "Layout C",
+					"price": 420000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/F-00-B-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		}
+	],
+	"houseTypeF": [
+		{
+			"id": 1,
+			"name": "ground-floor",
+			"floorLayouts": [
+				{
+					"id": 7,
+					"name": "Open plan kitchen to rear",
+					"price": 0,
+					"src": "http://p4p.uniformstaging.net/static/media/F-00-A-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 8,
+					"name": "Layouts a,b and c + extension",
+					"price": 15000,
+					"src": "http://p4p.uniformstaging.net/static/media/F-00-A-1-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 9,
+					"name": "Kitchen to front",
+					"price": 1550,
+					"src": "http://p4p.uniformstaging.net/static/media/F-00-B-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 10,
+					"name": "Layouts a,b and c + extension",
+					"price": 16550,
+					"src": "http://p4p.uniformstaging.net/static/media/F-00-B-1-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 11,
+					"name": "Kitchen at rear with wall divider",
+					"price": 1550,
+					"src": "http://p4p.uniformstaging.net/static/media/F-00-C-1-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 12,
+					"name": "Layouts a,b and c + extension",
+					"price": 16550,
+					"src": "http://p4p.uniformstaging.net/static/media/F-00-C-1-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "first-floor",
+			"floorLayouts": [
+				{
+					"id": 13,
+					"name": "3 beds 1 bath",
+					"price": 0,
+					"src": "http://p4p.uniformstaging.net/static/media/F-01-D-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 14,
+					"name": "2 beds 1 bath 1 shower ensuite",
+					"price": 4500,
+					"src": "http://p4p.uniformstaging.net/static/media/F-01-E-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 15,
+					"name": "2 beds 1 bath + ensuite",
+					"price": 4500,
+					"src": "http://p4p.uniformstaging.net/static/media/F-01-F-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "second-floor",
+			"floorLayouts": [
+				{
+					"id": 16,
+					"name": "Ordinary roof trusses not able to be converted",
+					"price": 0,
+					"src": "http://p4p.uniformstaging.net/static/media/F-02-G-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 17,
+					"name": "Loft with loft trusses installed",
+					"price": 2550,
+					"src": "http://p4p.uniformstaging.net/static/media/F-02-H-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 18,
+					"name": "Loft conversation with one bedroom",
+					"price": 14000,
+					"src": "http://p4p.uniformstaging.net/static/media/F-02-J-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 19,
+					"name": "Loft conversation with one bedroom + ensuite shower",
+					"price": 21000,
+					"src": "http://p4p.uniformstaging.net/static/media/F-02-K-0-1.png",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl.",
+					"dontShow": [7]
+				}
+			]
+		}
+	],
+	"floorTypes3": [
+		{
+			"id": 1,
+			"name": "ground-floor",
+			"floorLayouts": [
+				{
+					"id": 16,
+					"name": "Layout D",
+					"price": 260000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 17,
+					"name": "Layout D",
+					"price": 320000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 18,
+					"name": "Layout D",
+					"price": 420000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "first-floor",
+			"floorLayouts": [
+				{
+					"id": 19,
+					"name": "Layout E",
+					"price": 260000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 20,
+					"name": "Layout E",
+					"price": 320000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 21,
+					"name": "Layout E",
+					"price": 420000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "second-floor",
+			"floorLayouts": [
+				{
+					"id": 22,
+					"name": "Layout F",
+					"price": 260000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 23,
+					"name": "Layout F",
+					"price": 320000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				},
+				{
+					"id": 24,
+					"name": "Layout F",
+					"price": 420000,
+					"src": "https://s3-eu-west-1.amazonaws.com/uniformdotnet/P4P/house-type.jpg",
+					"description": "Vestibulum ut elit eu odio accumsan convallis. Proin eget odio iaculis, congue lectus vitae, gravida risus. Mauris ultricies venenatis ipsum, id commodo diam volutpat non. Sed vitae aliquet sapien. Quisque a vulputate elit. In semper erat sit amet enim aliquam, non egestas mi facilisis. Praesent lacinia, erat ut ultricies ornare, erat purus sollicitudin urna, a consequat urna dolor sed nisl."
+				}
+			]
+		}
+	]
 }
